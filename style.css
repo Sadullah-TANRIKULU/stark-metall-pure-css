@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    .header-topheader-navbar-sliderimageanasayfa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .topheader {
+        display: none;
+        padding-top: 1rem;
+        border-bottom: 8px solid #ffd500;
+    }
+
+    .navbar {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 2px;
+        width: 100%;
+    }
+
+    .logo-searchinputdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .searchinputdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        height: 2rem;
+        width: 13rem;
+        background-color: #eee;
+    }
+
+    .searchinput {
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border: none;
+        height: 1.5rem;
+        text-indent: .7rem;
+    }
+
+    .searchinput:focus {
+        outline: none;
+    }
+
+    .searchvector {
+
+        width: 1.25rem;
+        height: 1.25rem;
+
+    }
+
+    .menus {
+        display: flex;
+    }
+
+    .menus .titles {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .menus li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .menus a {
+        text-decoration: none;
+    }
+
+    .kurumsal-dropdown-title {
+        display: block;
+    }
+
+    .kurumsal-dropdown {
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+        width: 14.77rem;
+        background-color: rgb(238 238 238 / 0.9);
+        color: #000;
+        font-weight: 500;
+
+    }
+
+    .dropdown-sidebar {
+        width: 4px;
+        height: 100%;
+        background: #ffd500;
+    }
+
+    /* DROPDOWN DENEME */
+    ul li ul {
+        background: rgba(238, 238, 238, 0.9);
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        left: 6.59rem;
+    }
+
+    ul li:hover>ul,
+    ul li:focus-within>ul,
+    ul li ul:hover,
+    ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+    .sliderimganasayfa {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+
+    }
+    .sliderimganasayfa img {
+        width: 440px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    /* MAIN */
+    /* MATKAP UÇLARI GÖRSELLER KISMI */
+    .matkapuclari-matkapucuaciklama {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        align-items: center;
+        width: 100%;
+        height: 31rem;
+        justify-content: space-between;
+    }
+    .matkapuclari {
+        display: grid;
+        gap: 150px 10px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        font-size: 8px;
+        width: 100%;
+    }
+    .matkapucu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-right: 2px solid #d9d9d9;
+        height: 6rem;
+    }
+    .matkapucu > img {
+        height: 175px;
+    }
+    .matkapucuaciklama {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        color: #6B6E6F;
+        height: 7.5rem;
+
+    }
+    .anasayfa-hr1 {
+        margin-top: 10rem;
+        background-color: #d9d9d9;
+    }
+
+    /* IMG VE VIDEO WITH DESCRIPTION KISMI */
+    .resimvideoaciklama-resim-video{
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .resimaciklama {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    .anasayfa-hr2 {
+        width: 30%;
+        background-color: #6B6E6F;
+    }
+    .resimanasayfa{
+        display: flex;
+        align-items: center;
+    }
+    .videoanasayfa{
+        height: 14rem;
+    }
+    .videoaciklama {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .anasayfa-hr3 {
+        background-color: #6B6E6F;
+    }
+
+    /* TEKLİF AL KISMI */
+    .teklifalaciklama-buton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        gap: 4rem;
+    }
+    .teklifalaciklama {
+        font-weight: 500;
+        color: #6B6E6F;
+    }
+    .teklifalbuton {
+        color: #6B6E6F;
+        background-color: #ffd500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 3.5rem;
+    }
+    .teklifalbuton > h4 {
+        color: #6B6E6F;
+        width: 5rem;
+        height: 1.5rem;
+    }
+
+    /* FOOTER */
+    .footer-kurumsal-ürünler-iletisim-socialicons {
+        width: 100%;
+        font-size: 8px;
+    }
+    .footerlinkler-socialicons {
+        width: 100%;
+        border-top-width: 1rem;
+        border-color: #d9d9d9;
+        background-color: #ffd500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerlinkler {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        text-align: left;
+    }
+    .footerlinkler > h5 {
+        font-weight: 600;
+        color: #6B6E6F;
+    }
+    .footerlinkler > div {
+        color: rgba(107, 110, 111, 0.75);
+        height: 5rem;
+    }
+    .socialicons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        justify-content: end;
+    }
+    .bottomfooter {
+        background-color: #000;
+        height: 0.75rem;
+        color: #eee;
+        width: 100%;
+    }
+    .bottomfooter > h6 {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 962px) {
+    .top-header {
+        /* display: none; */
+        padding-top: 1rem;
+        border-bottom: 8px solid #ffd500;
+        width: 12rem;
+        height: 1rem;
+    }
+
+}
